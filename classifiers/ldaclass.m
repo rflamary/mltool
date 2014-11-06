@@ -5,6 +5,10 @@ function [w,w0]=ldaclass(X,Y,lambda)
 %   X : (n x d) training example
 %   Y : (n) binary (-1,1) training labels
 %   lambda : (optional) quadratic regularization parameter
+%
+% Output: pred func f(x)=x'*w+w0
+%   w (d) : normal to hyperplane vector
+%   w0  : classifier bias
 
 if nargin<3
     lambda=0;
