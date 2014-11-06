@@ -19,6 +19,10 @@ Matlab/Octave Machine Learning Toolbox for linear classification with applicatio
 
 ### Short Documentation
 
+### Aknowlegment
+
+* MI Dataset is extracted from IIa, BCI competition IV. It has been pre-precessed by Fabien Lotte.
+
 ### Contact
 
 - [Rémi Flamary](http://remi.flamary.com/)
