@@ -1,10 +1,14 @@
 function [w,w0]=ldaclass(X,Y,lambda)
+% [w,w0]=ldaclass(X,Y,lambda)
+% LDA linear classifier
+% Input:
+%   X : (n x d) training example
+%   Y : (n) binary (-1,1) training labels
+%   lambda : (optional) quadratic regularization parameter
 
 if nargin<3
     lambda=0;
 end
-
-lambda=lambda;
 
 Xp=X(Y==1,:);
 Xn=X(Y==-1,:);
