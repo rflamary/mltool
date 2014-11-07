@@ -40,7 +40,7 @@ ACC_app=mean(sign(ypred)==y)
 xc=linspace(-2.5,2.5);
 yc=(-w0-xc*w(1))/w(2);
 
-figure(1)
+figure(2)
 plot(x(y==1,1),x(y==1,2),'+r')
 hold on
 plot(x(y==-1,1),x(y==-1,2),'x')
