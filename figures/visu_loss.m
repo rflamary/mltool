@@ -1,6 +1,7 @@
 close all
 clear all
 
+%% ok 
 %% classification loss
 
 err=-2:0.01:2;
