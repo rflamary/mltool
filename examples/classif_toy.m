@@ -3,6 +3,8 @@ clear all
 close all
 addpath(genpath('..'))
 
+%%% test git
+
 %% Dataset generation
 
 d=2;

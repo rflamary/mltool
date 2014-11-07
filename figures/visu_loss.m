@@ -1,9 +1,9 @@
 close all
 clear all
 
+
 % NOTE: the figures are generated with matlab, Octave might generet
 % differnt figures expetially concenening Latex text
-
 
 %% classification loss
 
