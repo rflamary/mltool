@@ -29,6 +29,21 @@ switch dataset
         xtest=xtest(:,1:end-1);    
         
         ytest=(ytest==2)-(ytest==1);
+        
+        
+    case 'ECOG'
+        load('ECoG_Finger')
+
+        napp=2000;
+        
+        xapp=Xall(1:napp,:);
+        yapp=Yall(1:napp);
+        
+        
+        xtest=Xall(napp+1:end,:);
+        ytest=Yall(napp+1:end);       
+     
+        
     
     otherwise 
         error('unknown dataset')
