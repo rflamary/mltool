@@ -8,8 +8,8 @@ addpath(genpath('..'))
 %% Dataset generation
 
 d=2;
-n=50;
-noise=.5;
+n=100;
+noise=1;
 
 y=[ones(n/2,1);-ones(n/2,1)];
 x=[1+noise*randn(n/2,2);-1+noise*randn(n/2,2)];
@@ -33,7 +33,8 @@ lambda=1e-0;
 
 ypred=x*w+w0;
 
-ACC_app=mean(sign(ypred)==y)
+
+perf=perf_classif(y,ypred)
 
 
 % plot discriminant function

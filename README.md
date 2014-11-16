@@ -8,7 +8,7 @@ Matlab/Octave Machine Learning Toolbox for linear classification with applicatio
 * Linear models
     * Linear Discriminant Analysis (LDA)
     * Support Vector Machine (SVM)
-    * Logistic Regression (LR)
+
     * Ridge Regression (RR)
     
 * Validation strategies
@@ -21,6 +21,7 @@ Matlab/Octave Machine Learning Toolbox for linear classification with applicatio
 	* Accuracy (ACC)
 	* Area Under the ROC curve (AUC)
 	* Cohen's Kappa (k)	
+
 	* Means Square Error (MSE)
 	* Correlation coefficient (corr)
     
@@ -47,6 +48,7 @@ All functions in the toolbox contain detailled documentation with parameters def
 ### Aknowlegment
 
 * MI Dataset is extracted from IIa, BCI competition IV and has been pre-precessed by Fabien Lotte.
+
 * Linear SVM Solver Copyright 2006 Olivier Chapelle
 
 ### Contact
