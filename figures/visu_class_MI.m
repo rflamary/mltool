@@ -49,6 +49,7 @@ xc=linspace(9.5,13);
 yc=(-w0-xc*w(1))/w(2);
 
 figure(2)
+set(gcf,'defaulttextinterpreter','latex');
 plot(xapp(yapp==1,1),xapp(yapp==1,2),'+r')
 hold on
 plot(xapp(yapp==-1,1),xapp(yapp==-1,2),'x')
@@ -56,8 +57,8 @@ ylim([9 12.5])
 plot(xc,yc,'k')
 hold off
 title('Classification Imagerie Motrice','FontSize',fs)
-l=legend('Classe +1  .','Classe -1  .','f(x) LDA','Location','NorthEast')
-set(l,'FontSize',fs)
+l=legend('Classe +1 ','Classe -1 ','f(x) LDA','Location','NorthEast')
+set(l,'FontSize',fs,'interpreter','latex')
 xlabel(['CSP 1'],'FontSize',fs)
 ylabel(['CSP 2'],'FontSize',fs)
 print('-depsc','visu_class_MI.eps')
