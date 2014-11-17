@@ -8,8 +8,6 @@ Matlab/Octave Machine Learning Toolbox for linear classification with applicatio
 * Linear models
     * Linear Discriminant Analysis (LDA)
     * Support Vector Machine (SVM)
-
-
     * Ridge Regression (RR)
     
 * Validation strategies
@@ -18,12 +16,10 @@ Matlab/Octave Machine Learning Toolbox for linear classification with applicatio
 	* K-fold cross validation
 	* Leave_one-out bootstrap
     
-* Performance measures
+* Performance measures (classification and regression)
 	* Accuracy (ACC)
 	* Area Under the ROC curve (AUC)
 	* Cohen's Kappa (k)	
-
-
 	* Means Square Error (MSE)
 	* Correlation coefficient (corr)
     
@@ -47,11 +43,17 @@ All functions in the toolbox contain detailled documentation with parameters def
 * *validation* folder contains all the pvalidation loops
 * *figures* folder contains the script used for generating figures in the chapter
 
-### Aknowlegment
+### Aknowlegments
 
-* MI Dataset is extracted from IIa, BCI competition IV and has been pre-precessed by Fabien Lotte.
+#### Datasets
+* MI Dataset is extracted from dataset IIa, [BCI competition IV](http://www.bbci.de/competition/iv/)and has been pre-precessed by [Fabien Lotte](https://sites.google.com/site/fabienlotte/).
+* P300 Dataset is extracted from subject APM of [UAM P300 Dataset](http://akimpech.izt.uam.mx/dokuwiki/doku.php?id=signal:bci:p300:database.es) using feature extraction described in [here](http://remi.flamary.com/biblio/BCI_selection.pdf)
+* Finger flexion ECog dataset is extracted from dataset 4 from [BCI competition IV](http://www.bbci.de/competition/iv/)
 
-* Linear SVM Solver Copyright 2006 Olivier Chapelle
+
+#### Code
+* Linear SVM Solver Copyright 2006 [Olivier Chapelle](http://olivier.chapelle.cc/index.html)
+* The computation of te Area under the ROC curve is performed using svmroccurve.m that has been extracted from [SVM-KM](http://asi.insa-rouen.fr/enseignants/~arakoto/toolbox/)
 
 ### Contact
 
