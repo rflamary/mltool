@@ -5,7 +5,10 @@ function [xapp,yapp,xtest,ytest]=get_dataset(dataset,options)
 %  dataset : type of dataset defalt='M1'
 %       - 'MI': motor imagery
 %           options : subject number (1->9)
-
+%       - 'P300': P300 speller dataset (no option)
+%       - 'ECOG': finger flexion prediction from ECOG (no option)
+%
+% See README file for more details on the datasets
 
 
 if nargin<2

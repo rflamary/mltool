@@ -37,8 +37,7 @@ lambda=1e2;
 ypred_app=xapp*w+w0;
 ypred_test=xtest*w+w0;
 
-MSE_app=mean((yapp-ypred_app).^2)
-MSE_test=mean((ytest-ypred_test).^2)
+perf=perf_reg(ytest,ypred_test)
 
 
 %%
