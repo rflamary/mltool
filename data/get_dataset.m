@@ -43,7 +43,18 @@ switch dataset
         xtest=Xall(napp+1:end,:);
         ytest=Yall(napp+1:end);       
      
+    case 'P300'
+        load('P300_data')
+
+        napp=2000;
         
+        xapp=X(1:napp,:);
+        yapp=Y(1:napp);
+        
+        
+        xtest=X(napp+1:end,:);
+        ytest=Y(napp+1:end);       
+             
     
     otherwise 
         error('unknown dataset')
