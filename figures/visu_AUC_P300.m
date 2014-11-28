@@ -59,6 +59,6 @@ l=legend(['LDA, AUC=' num2str(AUC,3) '  \hspace{2mm}'],['SVM, AUC=' num2str(AUC2
 set(l,'FontSize',fs,'interpreter','latex')
 xlabel(['FPR'],'FontSize',fs)
 ylabel(['TPR'],'FontSize',fs)
-print('-depsc','visu_AUC_MI.eps')
+print('-depsc','visu_AUC_P300.eps')
 
 
