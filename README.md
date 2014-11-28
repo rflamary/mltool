@@ -1,4 +1,4 @@
-mltool
+MLTool-BCI
 ======
 
 Matlab/Octave Machine Learning Toolbox for linear classification with applications in Brain-Computer Interfaces (BCI). This toolbox is distributed with GPL license along a tutorial chapter Machine learning for BCI in the [book](). 
@@ -14,7 +14,7 @@ Matlab/Octave Machine Learning Toolbox for linear classification with applicatio
 	* Hold-out
 	* Random sampling
 	* K-fold cross validation
-	* Leave_one-out bootstrap
+	* Leave-one-out bootstrap
     
 * Performance measures (classification and regression)
 	* Accuracy (ACC)
