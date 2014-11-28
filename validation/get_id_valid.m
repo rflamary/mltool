@@ -31,6 +31,16 @@ switch valid
             itrain{i}=find(idtemp~=i);
             itest{i}=find(idtemp==i);           
         end
+
+         
+    case {'given-kfold','given-k-fold'}
+        lst=param;
+        vals=unique(lst);
+        k=length(vals);
+        for i=1:k
+            itrain{i}=find(lst~=vals(i));
+            itest{i}=find(lst==vals(i));           
+        end       
         
     case 'random'
         ratio=param(1);
