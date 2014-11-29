@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="MLTool for BCI : Matlab/Octave Machine Learning Toolbox for Brain-Computer Interfaces">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>MLTool for BCI</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/rflamary/mltool">View on GitHub</a>
+
+          <h1 id="project_title">MLTool for BCI</h1>
+          <h2 id="project_tagline">Matlab/Octave Machine Learning Toolbox for Brain-Computer Interfaces</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/rflamary/mltool/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/rflamary/mltool/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="mltool-bci" class="anchor" href="#mltool-bci" aria-hidden="true"><span class="octicon octicon-link"></span></a>MLTool-BCI</h1>
+
+<p>Matlab/Octave Machine Learning Toolbox for linear classification with applications in Brain-Computer Interfaces (BCI). This toolbox is distributed with GPL license along a tutorial chapter Machine learning for BCI in the <a href="">book</a>. </p>
+
+<h3>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h3>
+
+<ul>
+<li>
+<p>Linear models</p>
+
+<ul>
+<li>Linear Discriminant Analysis (LDA)</li>
+<li>Support Vector Machine (SVM)</li>
+<li>Ridge Regression (RR)</li>
+</ul>
+</li>
+<li>
+<p>Validation strategies</p>
+
+<ul>
+<li>Hold-out</li>
+<li>Random sampling</li>
+<li>K-fold cross validation</li>
+<li>Leave-one-out bootstrap</li>
+</ul>
+</li>
+<li>
+<p>Performance measures (classification and regression)</p>
+
+<ul>
+<li>Accuracy (ACC)</li>
+<li>Area Under the ROC curve (AUC)</li>
+<li>Cohen's Kappa (k) </li>
+<li>Means Square Error (MSE)</li>
+<li>Correlation coefficient (corr)</li>
+</ul>
+</li>
+<li>
+<p>Demo Datasets</p>
+
+<ul>
+<li>Motor Imagery (MI) with CSP features</li>
+<li>P300 Speller with temporal features</li>
+<li>ECoG finger movement prediction dataset</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<ul>
+<li>Download current version <a href="https://github.com/flam157/mltool/archive/master.zip">here</a>
+</li>
+<li>Extract in a subfolder</li>
+<li>Add path to Matlab/Octave with "addpath(genpath('path-to-mltool'))" to execute any function in the toolbox</li>
+</ul>
+
+<h3>
+<a id="short-documentation" class="anchor" href="#short-documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Short Documentation</h3>
+
+<p>All functions in the toolbox contain detailled documentation with parameters definition.</p>
+
+<ul>
+<li>
+<em>classifier</em> folder contains all the linear models estimation functions (only binary classification)</li>
+<li>
+<em>performance</em> folder contains all the performance computation functions</li>
+<li>
+<em>validation</em> folder contains all the pvalidation loops</li>
+<li>
+<em>figures</em> folder contains the script used for generating figures in the chapter</li>
+</ul>
+
+<h3>
+<a id="aknowlegments" class="anchor" href="#aknowlegments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Aknowlegments</h3>
+
+<h4>
+<a id="datasets" class="anchor" href="#datasets" aria-hidden="true"><span class="octicon octicon-link"></span></a>Datasets</h4>
+
+<ul>
+<li>MI Dataset is extracted from dataset IIa, <a href="http://www.bbci.de/competition/iv/">BCI competition IV</a>and has been pre-precessed by <a href="https://sites.google.com/site/fabienlotte/">Fabien Lotte</a>.</li>
+<li>P300 Dataset is extracted from subject APM of <a href="http://akimpech.izt.uam.mx/dokuwiki/doku.php?id=signal:bci:p300:database.es">UAM P300 Dataset</a> using feature extraction described in <a href="http://remi.flamary.com/biblio/BCI_selection.pdf">here</a>
+</li>
+<li>Finger flexion ECog dataset is extracted from dataset 4 from <a href="http://www.bbci.de/competition/iv/">BCI competition IV</a>
+</li>
+</ul>
+
+<h4>
+<a id="code" class="anchor" href="#code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code</h4>
+
+<ul>
+<li>Linear SVM Solver Copyright 2006 <a href="http://olivier.chapelle.cc/index.html">Olivier Chapelle</a>
+</li>
+<li>The computation of te Area under the ROC curve is performed using svmroccurve.m that has been extracted from <a href="http://asi.insa-rouen.fr/enseignants/%7Earakoto/toolbox/">SVM-KM</a>
+</li>
+</ul>
+
+<h3>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact</h3>
+
+<ul>
+<li><a href="http://remi.flamary.com/">Rémi Flamary</a></li>
+<li><a href="http://asi.insa-rouen.fr/enseignants/%7Earakoto/">Alain Rakotomamonjy</a></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">MLTool for BCI maintained by <a href="https://github.com/rflamary">rflamary</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
